@@ -1,0 +1,152 @@
+#top_banner{
+    width: 100%;
+    height: 30vh;
+    background:  url(../images/slide_3.jpg) no-repeat center;
+    background-size: cover;
+
+}
+#top_banner h1{
+    color: #fff;
+    text-align: center;
+    padding-top: 16vh;
+}
+/* contents */
+
+#bs_content_wrap{
+    margin: 10% auto;
+}
+
+
+#bs_contents{
+    margin: 0 5% 6%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.bs_content_img{
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+}
+.bs_content_img img{
+    width: 100%;
+}
+
+.bs_content_text{
+    width: 45%;
+    position: relative;
+}
+
+.bs_content_text_title{
+    font-weight: 400;
+    font-size: 2.1em;
+    padding-bottom: 20px;
+}
+
+.bs_content_text span{
+    color:#334d8b;
+    
+}
+
+.bs_content_text h3{
+    font-weight: 300;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    padding: 30px 0 40px;
+}
+
+.bs_content_text p{
+    font-size: 0.9em;
+}
+
+.bs_content_btn{
+    display: block;
+    width: 37%;
+    border: 2px solid #334d8b;
+    padding: 5px;
+    color: #334d8b;
+    position: absolute;
+    bottom: 0;
+    box-sizing: border-box;
+    transition: all .7s;
+}
+.bs_content_btn img{
+    display: inline-block;
+    padding-left: 10px;
+    transition: all .7s;
+}
+
+.bs_content_btn:hover{
+    padding-left: 20px;
+    background-color: #334d8b;
+    color: #fff;
+}
+
+.bs_content_btn:hover>img{
+    opacity: 0;
+    padding-left: 0px;
+}
+
+
+@media (max-width:787px){
+
+    #bs_content_wrap{
+        margin: 10% auto;
+    }
+    
+    
+    #bs_contents{
+        margin: 0 0 6%;
+    }
+    
+    .bs_content_img{
+        width: 95%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+        margin: 20px auto;
+    }
+    .bs_content_img img{
+        width: 100%;
+    }
+    
+    .bs_content_text{
+        width: 100%;
+        text-align: center;
+    }
+    
+    .bs_content_text_title{
+        font-weight: 400;
+        font-size: 2.1em;
+        padding-bottom: 20px;
+    }
+    
+
+    
+    .bs_content_text h3{
+        font-weight: 300;
+        font-size: 1.2em;
+        line-height: 1.2em;
+        padding: 30px 0 40px;
+    }
+    
+    .bs_content_text p{
+        padding-bottom: 50px;
+    }
+    
+    .bs_content_btn{
+        width: 50%;
+        padding: 5px;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .bs_content_btn img{
+        display: inline-block;
+        padding-left: 10px;
+    }
+    
+
+    #bs_content_wrap #bs_contents:nth-child(2n){
+        flex-wrap: wrap-reverse;
+    }
+}
