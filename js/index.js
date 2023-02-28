@@ -19,7 +19,7 @@ $(document).ready(function() {
 $(document).ready(function(){		
     $("#menu").mmenu({
        "slidingSubmenus": false,
-       "navbar": { "title":"티카타카" },
+       "navbar": { "title":"회사명" },
        "extensions": [
           "pagedim-black",
           "position-right",
