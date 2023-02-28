@@ -158,7 +158,11 @@
 }
 } */
 /* 수정 */
-
+#read_box_1{
+    width: 50%;
+    margin:3% auto;
+    border-bottom:1px solid #ccc;
+}
 .read_box_title1{
     width: 100%;
     text-align:center;
